@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-bar">
+        <input type="text" placeholder="Search Jobs">
+        <a href="wallet.html"><button class="wallet-button" id="walletButton" data-tooltip="We move on to the wallet page">Wallet</button></a>
+    </div>
+
+    <div class="search-results">
+        <div class="job-card">
+            <div class="job-header">
+                <img src="https://cdn.dribbble.com/users/3390157/screenshots/6283813/dribbble_4x.png" alt="Description" class="small-img">
+                <div class="job-title">
+                    <h3>(Part Time) Kitchen/Service Crew</h3>
+                    <p>SUSHIRO GH SINGAPORE PTE. LTD.</p>
+                </div>
+                <span class="featured">Featured</span>
+            </div>
+            <p>Last Updated on 11 Jul '24</p>
+            <p class="job-location">Multiple Locations</p>
+            <p class="job-salary">Up To S$15/hour</p>
+            <div class="job-actions">
+                <button class="save-btn" data-tooltip="It will be added to your saved jobs">Save</button>
+                <button class="share-btn" data-tooltip="When you click on the share button you will receive a link to the job application">Share</button>
+                <button class="apply-btn" data-tooltip="Apply for this job">Apply</button>
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-header">
+                <img src="https://image.freepik.com/free-vector/ramen-logo-vector_557569-200.jpg" alt="Ippudo Logo" class="company-logo">
+                <div class="job-title">
+                    <h3>JAPANESE RAMEN PART TIME SERVICE/KITCHEN CREW (UP TO $26/HR)</h3>
+                    <p>IPPUDO SINGAPORE PTE. LTD.</p>
+                </div>
+                <span class="featured">Featured</span>
+            </div>
+            <p>Last Updated on 11 Jul '24</p>
+            <p class="job-location">Multiple Locations</p>
+            <p class="job-salary">Up To S$26/hour</p>
+            <div class="job-actions">
+                <button class="save-btn" data-tooltip="It will be added to your saved jobs">Save</button>
+                <button class="share-btn" data-tooltip="When you click on the share button you will receive a link to the job application">Share</button>
+                <button class="apply-btn" data-tooltip="Apply for this job">Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="wallet-container" id="walletContainer">
+        <div class="wallet">
+            <h2>Digital Wallet</h2>
+            <p>Balance: <span id="walletBalance">$100.00</span></p>
+            <h3>Credit Cards</h3>
+            <ul id="cardList">
+                <!-- Credit cards will be listed here -->
+            </ul>
+            <h3>Add a New Card</h3>
+            <form id="addCardForm">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="cardName">Card name</label>
+                <input type="text" id="cardName" name="cardName" required>
+                
+                <label for="cardNumber">Card number</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+                
+                <button type="submit">Add card</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

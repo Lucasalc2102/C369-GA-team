@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wallet.html">Wallet</a></li>
+        </ul>
+    </nav>
+
+    <div class="wallet-page">
+        <h2>Digital Wallet</h2>
+        <p>Balance: <span id="walletBalance">$100.00</span></p>
+        <h3>Credit Cards</h3>
+        <ul id="cardList">
+            <!-- Credit cards will be listed here -->
+        </ul>
+        <h3>Add a New Card</h3>
+        <form id="addCardForm">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <div class="flex-container">
+                <label for="cardName">Card name</label>
+                <input type="text" id="cardName" name="cardName" required>
+                
+                <label for="cardNumber">Card number</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+                
+            </div>
+            <button type="submit">Add card</button>
+        </form>
+
+    <script src="wallet.js"></script>
+</body>
+</html>

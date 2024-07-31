@@ -1,0 +1,305 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+#walletButton {
+    background-color: #28a745;
+}
+
+.wallet-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wallet-button:hover {
+    background-color: #0056b3;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-results {
+    padding: 10px;
+}
+
+.job-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-header {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.job-title {
+    flex-grow: 1;
+}
+
+.job-title h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.job-title p {
+    margin: 5px 0 0;
+    color: #777;
+}
+
+.featured {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.job-location,
+.job-salary {
+    color: #333;
+    margin: 10px 0;
+}
+
+.job-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.save-btn,
+.share-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.save-btn:hover,
+.share-btn:hover {
+    background-color: #0056b3;
+}
+
+.save-btn::after,
+.share-btn::after {
+    content: attr(data-tooltip);
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.save-btn:hover::after,
+.share-btn:hover::after {
+    display: block;
+}
+
+.wallet-container {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+}
+
+.wallet {
+    display: flex;
+    flex-direction: column;
+}
+
+.wallet h2,
+.wallet h3 {
+    margin-top: 0;
+}
+
+.wallet p,
+.wallet label {
+    margin: 5px 0;
+}
+
+.wallet input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.wallet button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wallet button:hover {
+    background-color: #0056b3;
+}
+
+.wallet ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wallet ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.wallet ul li button {
+    background-color: #ff4081;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wallet ul li button:hover {
+    background-color: #e60050;
+}
+.wallet-page {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-page h2 {
+    margin-top: 0;
+}
+
+.wallet-page form, .wallet-page ul {
+    margin-top: 20px;
+}
+
+.wallet-page button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wallet-page button:hover {
+    background-color: #0056b3;
+}
+/* Navigation bar styles */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.small-img {
+    width: 100px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Flexbox for aligning inputs */
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-container label, .flex-container input {
+    margin-right: 10px;
+}
+
+.wallet-button, .save-btn, .share-btn, .apply-btn {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wallet-button:hover, .save-btn:hover, .share-btn:hover, .apply-btn:hover {
+    background-color: #0056b3;
+}
